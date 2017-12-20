@@ -1,0 +1,203 @@
+/*
+/////////////////////
+    Base styles
+/////////////////////
+*/
+html{
+    font-size: 20.35px;
+    background-color: white;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/*
+/////////////////////
+    Top line and menu styles
+/////////////////////
+*/
+.topline{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "SegoeWP" arial;
+}
+.logo-img{
+    margin-right: 15px;
+}
+.menu{
+    display: inline-flex;
+    position: relative;
+    top: 51px;
+    height: 40px;
+}
+.menu a{
+    color: #666666;
+}
+.menu li{
+    margin-right: 40px;
+    
+}
+.menu li:hover{
+    border-bottom: 3px solid #5094f2;
+}
+.menu-icon{
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    display: none;
+}
+.menu-icon:active, .menu-icon:focus{
+    background-color: black;
+}
+/*
+/////////////////////
+    Header styles
+/////////////////////
+*/
+header{
+    background-image: url(../img/bg-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; 
+}
+
+.header-content{
+    color: white;
+    line-height: 1.5;
+    font-size: 2vw;
+    font-family: "SegoeWP" arial;
+}
+.header-content_main{
+    font-size: 4vw;
+}
+button{
+    margin: 20px 10px;
+    background-color: #5094f2;
+    color: #fff;
+}
+.mobmenu{
+    margin-bottom: 10px;
+    width : 100px;
+    display: none;
+}
+.mobmenuopen{
+  display: block;
+}
+.mob-menu li:hover{
+    border-bottom:2px solid grey
+}
+.mob-menu li:focus{
+    border-bottom:2px solid grey
+}
+.mob-menu li:active{
+    border-bottom:2px solid grey
+}
+}
+/*
+/////////////////////
+    Main styles
+/////////////////////
+*/
+.main-blocks{
+    padding: 30px 0;
+}
+.main-title-text{
+    font-size: 1.5rem;
+    color: #5094f2;
+}
+.main-title-text-sub{
+    font-size: 1rem;
+}
+.second-block{
+    padding: 20px;
+}
+
+.cart{
+    text-align: center;
+    font-size:42px;
+    color:#666666;
+    padding: 20px;
+}
+.some-text{
+    color:#666666;
+    font-size: 26px;
+    padding:10px 0px 20px;
+    margin-top: 30px;
+}
+/*
+/////////////////////
+    footer
+/////////////////////
+*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:200px;
+    border-top: 1px solid #666;
+    margin-top: 50px;
+}
+/*
+/////////////////////
+    media
+/////////////////////
+*/
+@media screen and (max-width: 768px){
+
+.header-content{
+    font-size: 3vw;
+}
+.header-content_main{
+    font-size: 5vw;
+}
+.menu-icon{
+    display: block;
+}
+.menu{
+    display: none;
+}
+.main-blocks{
+    border-bottom: 1px solid grey;  
+}
+.main-title-text{
+    font-size: 1rem;
+    text-align: left;
+}
+.main-title-text-sub{
+    font-size: 0.5rem;
+    text-align: left;
+}
+.main-image{
+    width: 50%;
+    height: auto;
+}
+@media screen and (max-width: 400px){
+.main-title-text{
+    font-size: 0.8rem;
+    text-align: left;
+}  
+.main-title-text-sub{
+    font-size: 0.5rem;
+    text-align: left;
+}
+}
+@media screen and (min-width: 920px){
+.header-content{
+    font-size: 1.5rem;
+}
+.header-content_main{
+    font-size: 3rem;
+}
+}
