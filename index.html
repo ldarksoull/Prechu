@@ -7,7 +7,8 @@
     <title>Prechu</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Подключаем CSS-->
+    <script src="js/main.js"></script>
+    <!-- Подключаем CSS -->
 </head>
 
 <body>
@@ -24,8 +25,24 @@
                 </nav>
             </div>
             <div class="menu-icon">
-                <a href="#"><img src="img/menu.png" alt=""></a>
+                <a href="#"><img id="menu" onclick="menu()" src="img/menu.png" alt="menu"></a>
             </div>
+            <nav class="mob-menu">
+                <Li><a href="#">Home</a></Li>
+                <Li><a href="#">Products</a></Li>
+                <Li><a href="#">Services</a></Li>
+                <Li><a href="#">Contact</a></Li>
+            </nav>
+            <script>
+                function menu() {
+                    var arrayOfElements = document.getElementsByClassName('mobmenu');
+                    var lengthOfArray = arrayOfElements.length;
+
+                    for (var i = 0; i < lengthOfArray; i++) {
+                        arrayOfElements[i].style.display = 'block';
+                    }
+                }
+            </script>
         </div>
     </div>
     <header>
@@ -35,10 +52,10 @@
                 </div>
                 <div class="col-6 text-left">
                     <div class="header-content">
-                        <span class="header-content_main">Lorem ipsum is simply</span><br>
-                        <span>dummy text of the <br>
-                    printing &amp; typesetting</span><br>
-                        <button><img src="" alt="">Sign up now</button>
+                        <span class="header-content_main">Lorem ipsum.</span><br>
+                        <span>Lorem ipsum.<br>
+                    Lorem </span><br>
+                        <button><img src="" alt="">press button</button>
                     </div>
                 </div>
             </div>
@@ -63,7 +80,7 @@
                         <img class="img-fluid main-image" src="img/icon-col2.png" alt="">
                     </div>
                     <div class="col-sm-6 col-xs-6 col-6 col-md-12">
-                       <span class="main-title-text">Contrary to popular</span><br>
+                        <span class="main-title-text">Contrary to popular</span><br>
                         <div class="main-title-text-sub">Lorem Ipsum is not simply random text. It has roots in a piece</div>
                     </div>
                 </div>
@@ -74,13 +91,28 @@
                         <img class="img-fluid main-image" src="img/icon-col3.png" alt="">
                     </div>
                     <div class="col-sm-6 col-xs-6 col-6 col-md-12">
-                       <span class="main-title-text">Contrary to popular</span><br>
+                        <span class="main-title-text">Contrary to popular</span><br>
                         <div class="main-title-text-sub">Lorem Ipsum is not simply random text. It has roots in a piece</div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row second-block">
+            <div class="col-md-5 col-sm-12 col-xs-12 text-center">
+                <div class="cart-block">
+                    <div class="cart">The Shopping cart</div>
+                    <img src="img/cart.png" class="img-fluid main-image" alt="cart">
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="some-text">Some Bullet text here</div>
+                <div class="another-text">Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum has been the industry's standard dummy text ever When an unknown printer took a galley of type and scrambled It to make a type specimen book. It has survived not only five centuries But also the leap into electronic typesetting, Remaining essentially unchanged. It was popularised The release of Letraset sheets containing Lorem Ipsum passages</div>
+            </div>
+        </div>
     </main>
+    <footer>
+        Copyright © 2012-2013 cssauthor.com
+    </footer>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
 html{
     font-size: 20.35px;
     background-color: white;
+    box-sizing: border-box;
 }
 li{
     list-style: none;
@@ -86,6 +87,24 @@ button{
     background-color: #5094f2;
     color: #fff;
 }
+.mobmenu{
+    margin-bottom: 10px;
+    width : 100px;
+    display: none;
+}
+.mobmenuopen{
+  display: block;
+}
+.mob-menu li:hover{
+    border-bottom:2px solid grey
+}
+.mob-menu li:focus{
+    border-bottom:2px solid grey
+}
+.mob-menu li:active{
+    border-bottom:2px solid grey
+}
+}
 /*
 /////////////////////
     Main styles
@@ -100,6 +119,35 @@ button{
 }
 .main-title-text-sub{
     font-size: 1rem;
+}
+.second-block{
+    padding: 20px;
+}
+
+.cart{
+    text-align: center;
+    font-size:42px;
+    color:#666666;
+    padding: 20px;
+}
+.some-text{
+    color:#666666;
+    font-size: 26px;
+    padding:10px 0px 20px;
+    margin-top: 30px;
+}
+/*
+/////////////////////
+    footer
+/////////////////////
+*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:200px;
+    border-top: 1px solid #666;
+    margin-top: 50px;
 }
 /*
 /////////////////////
