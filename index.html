@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Prechu</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
     <!-- Подключаем CSS -->
 </head>
 
@@ -23,26 +23,20 @@
                     <Li><a href="#">Services</a></Li>
                     <Li><a href="#">Contact</a></Li>
                 </nav>
+                <div class="btn-menu" id="btn-submit">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
             </div>
-            <div class="menu-icon">
-                <a href="#"><img id="menu" onclick="menu()" src="img/menu.png" alt="menu"></a>
-            </div>
-            <nav class="mob-menu">
-                <Li><a href="#">Home</a></Li>
-                <Li><a href="#">Products</a></Li>
-                <Li><a href="#">Services</a></Li>
-                <Li><a href="#">Contact</a></Li>
-            </nav>
-            <script>
-                function menu() {
-                    var arrayOfElements = document.getElementsByClassName('mobmenu');
-                    var lengthOfArray = arrayOfElements.length;
-
-                    for (var i = 0; i < lengthOfArray; i++) {
-                        arrayOfElements[i].style.display = 'block';
-                    }
-                }
-            </script>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="menu-mobile" id="nav">
+                    <Li><a href="#">Home</a></Li>
+                    <Li><a href="#">Products</a></Li>
+                    <Li><a href="#">Services</a></Li>
+                    <Li><a href="#">Contact</a></Li>
+                </nav>
+        </div>
         </div>
     </div>
     <header>
@@ -50,13 +44,14 @@
             <div class="row align-items-center">
                 <div class="col-6"><img class="img-fluid" src="img/iphone.png" alt="iphone">
                 </div>
-                <div class="col-6 text-left">
+                <div class="col-6">
                     <div class="header-content">
                         <span class="header-content_main">Lorem ipsum.</span><br>
                         <span>Lorem ipsum.<br>
                     Lorem </span><br>
-                        <button><img src="" alt="">press button</button>
-                    </div>
+                        <a href="#">
+                        <input type="submit" value="Press button"></a></div>
+                    
                 </div>
             </div>
         </div>
@@ -113,6 +108,8 @@
     <footer>
         Copyright © 2012-2013 cssauthor.com
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

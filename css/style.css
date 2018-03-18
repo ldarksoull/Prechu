@@ -35,6 +35,7 @@ a:hover{
 .logo-img{
     margin-right: 15px;
 }
+
 .menu{
     display: inline-flex;
     position: relative;
@@ -51,15 +52,36 @@ a:hover{
 .menu li:hover{
     border-bottom: 3px solid #5094f2;
 }
-.menu-icon{
-    position: absolute;
-    right: 20px;
-    top: 19px;
+
+.menu-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
     display: none;
 }
-.menu-icon:active, .menu-icon:focus{
-    background-color: black;
+.menu-mobile li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
 }
+.btn-menu{
+    line-height: 90px;
+}
+.fa{
+    font-size: 25px;
+}
+@media screen and (min-width: 768px){
+    .menu-mobile{
+        display: none;
+    }
+    .btn-menu{
+        display: none;
+    }
+}
+
 /*
 /////////////////////
     Header styles
@@ -71,6 +93,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%; 
+    padding-top: 20px;
 }
 
 .header-content{
@@ -82,28 +105,16 @@ header{
 .header-content_main{
     font-size: 4vw;
 }
-button{
-    margin: 20px 10px;
+input{
+    margin-top: 10px;
     background-color: #5094f2;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input:hover{
     color: #fff;
-}
-.mobmenu{
-    margin-bottom: 10px;
-    width : 100px;
-    display: none;
-}
-.mobmenuopen{
-  display: block;
-}
-.mob-menu li:hover{
-    border-bottom:2px solid grey
-}
-.mob-menu li:focus{
-    border-bottom:2px solid grey
-}
-.mob-menu li:active{
-    border-bottom:2px solid grey
-}
 }
 /*
 /////////////////////
@@ -162,7 +173,7 @@ footer{
 .header-content_main{
     font-size: 5vw;
 }
-.menu-icon{
+.btn-menu{
     display: block;
 }
 .menu{
